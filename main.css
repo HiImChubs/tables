@@ -1,0 +1,51 @@
+table, th, td {
+  border: 1px solid #FFB91B;
+  border-collapse: collapse;
+
+}
+
+h1 {
+  color: #6E253C;
+}
+body {
+  background-color: #666666;
+  font-family:sans-serif;
+}
+tbody{
+  color: #ffffff;
+}
+tr.home {
+  background-color: #666666;
+}
+
+tr.away {
+  background-color: #aaaaaa;
+
+}
+
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  td {
+    display: block;
+    text-align: right;
+  }
+
+  td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+  }
+}
